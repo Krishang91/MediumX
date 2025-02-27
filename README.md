@@ -1,6 +1,5 @@
 # MediumX
 
-![MediumX Banner](https://via.placeholder.com/1200x400.png?text=MediumX+-+Your+Ultimate+Blogging+Platform)
 
 ## 🚀 Introduction
 **MediumX** is a feature-rich, open-source blogging platform inspired by Medium. Built with modern web technologies, it offers a seamless writing and reading experience. 
