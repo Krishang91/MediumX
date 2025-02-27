@@ -1,8 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { BACKEND_URL } from "../config"
-import { Blogs } from '../pages/Blogs';
-
 
 
 export interface Blog{
