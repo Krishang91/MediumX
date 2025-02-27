@@ -8,7 +8,7 @@
   // ],
   "vars": {
     "DATABASE_URL":"",
-    "JWT_SECRET":"afvctgsvbha"
+    "JWT_SECRET":""
   }
   // "kv_namespaces": [
   //   {

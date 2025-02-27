@@ -47,7 +47,18 @@ blogRouter.get('/bulk', async(c) => {
     }).$extends(withAccelerate())
     
    
-    const blogs=await prisma.post.findMany()
+    const blogs=await prisma.post.findMany({
+      select:{
+        content:true,
+        title:true,
+        id:true,
+        author:{
+          select:{
+            name:true
+          }
+        }
+      }
+    })
     return c.json({
       blogs
     })
@@ -125,6 +136,16 @@ blogRouter.get('/:id', async (c) => {
       where: {
         id: id,
       },
+      select:{
+        content:true,
+        title:true,
+        id:true,
+        author:{
+          select:{
+            name:true
+          }
+        }
+      }
     });
     return c.json({ blog });
   } catch (error) {

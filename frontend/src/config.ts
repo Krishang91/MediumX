@@ -1,0 +1,1 @@
+export const BACKEND_URL="https://backend.kgupta2-be22.workers.dev"
